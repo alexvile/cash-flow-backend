@@ -41,9 +41,16 @@ const loginController = async (req, res) => {
   return res.status(200).json(updatedUser);
 };
 
+const logoutController = async (req, res) => {
+  const { _id } = req.user;
+  await User.findByIdAndUpdate(_id, { token: null });
+  return res.status(204).json();
+};
+
 const controllers = {
   registerController,
   loginController,
+  logoutController,
 };
 
 module.exports = { controllers };
