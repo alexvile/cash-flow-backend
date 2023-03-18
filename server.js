@@ -7,7 +7,6 @@ const start = async () => {
       console.log(`Server running. Use our API on port: ${PORT}`);
     });
   } catch (error) {
-    // todo - normal error type
     console.log("Server or DB error: " + error);
     process.exit();
   }
