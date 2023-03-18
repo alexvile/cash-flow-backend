@@ -29,6 +29,9 @@
     "eslint-plugin-promise": "5.2.0",
     "nodemon": "2.0.15"
   },
+  "engines": {
+    "node": ">=17 "
+  },
   "author": "Solotvinskiy Olexiy",
   "license": "ISC"
 }
